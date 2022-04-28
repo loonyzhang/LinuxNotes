@@ -1,8 +1,8 @@
-PS1="\[\033[38;5;202m\]\u\[$(tput sgr0)\]@\h:\[$(tput sgr0)\]\[\033[38;5;6m\][\[$(tput sgr0)\]\[\033[38;5;27m\]\W\[$(tput sgr0)\]\[\033[38;5;6m\]]\[$(tput sgr0)\]\[\033[48;5;2m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\] \\$: \[$(tput sgr0)\]"
+export PS1='\[\e[38;5;135m\]\u\[\e[0m\]@\[\e[38;5;166m\]\h\[\e[0m\] \[\e[38;5;118m\]\w\[\e[0m\] \[\e[38;5;196m\]☭\e[0m '
 
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
-alias ll='ls $LS_OPTIONS -l'
+alias ll='ls $LS_OPTIONS -la'
 
 export PATH="/root/.local/bin:$PATH"
